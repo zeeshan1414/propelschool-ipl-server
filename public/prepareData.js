@@ -4,7 +4,7 @@ const economicalBowlers = require('./economicalBowlers');
 
 const MATCHES_FILE_PATH = "./csv_data/matches.csv";
 const DELIVERIES_FILE_PATH = "./csv_data/deliveries.csv";
-const JSON_OUTPUT_FILE_PATH = "./data.json";
+const JSON_OUTPUT_FILE_PATH = "./public/data.json";
 
 async function prepareData() {
     const matches = await csvtojson().fromFile(MATCHES_FILE_PATH);

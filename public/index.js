@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.get('/economy', (req, res) => {
     const year = req.query.year;
-    const data = require('./public/data.json');
+    const data = require('./data.json');
     res.send(data[year]);
 })
 
